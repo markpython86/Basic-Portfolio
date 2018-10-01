@@ -2,7 +2,7 @@
 
 body {
 
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Helvetica Neue', Helvetica, sans-serif;
     /*color: black;*/
     /*background-color: black;*/
     max-width: 960px;
@@ -66,47 +66,12 @@ nav{
 	line-height: 60px;
 	background-color: #43DDE5;
 	color: white;
-	font-size: 2em;
+	font-size: 1em;
 }
 .none:hover{
 	background-color: transparent;
 
 }
-
-/*nav ul {
-	position: relative;
-	float:right;
-	
-	display: flex;
-	flex-direction: row;
-	text-align: center;
-	line-height: 55px;
-	
-    margin-left: 0px;
-    right: 279px;
-    padding-left: 0px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-
-}
-nav a{
-	text-decoration: none;
-	color: black;
-}
-
-nav li{
-	list-style: none;
-	padding: 10px;
-	font-weight: 800;
-	
-	left:15px;
-}
-
-nav li:hover{
-	background-color: #D6EAF8;	
-}
-
-*/
 
 header{
 	position: fixed;
@@ -208,7 +173,7 @@ h6 {
 	padding: 20px;	
 	
 }*/
-
+/*hiddin icon styling*/
 #menu-icon {
 
 	display: hidden;
@@ -219,6 +184,8 @@ h6 {
 
 }
 
+
+/*hidden icon for responsive page*/
 a:hover#menu-icon {
 
 	/*background-color: #444;*/
@@ -227,6 +194,7 @@ a:hover#menu-icon {
 	height:40px;
 
 }
+/*unordered list styling*/
 
 ul {
 	position: relative;
@@ -246,6 +214,8 @@ ul {
 
 }
 
+
+/*list items styling*/
 li {
 
 	display: inline-block;
@@ -256,9 +226,14 @@ li {
 
 }
 
+/*when hover on the menu items shaded in light blue */
+
 li:hover{
 	background-color: #D6EAF8;
 }
+
+
+/*responsive page when screen is 760px*/
 
 @media only screen and (max-width : 762px) {
 	.name{
@@ -313,3 +288,41 @@ li:hover{
 	}
 
 }
+
+/*responsive menu end code*/
+
+/*nav ul {
+	position: relative;
+	float:right;
+	
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	line-height: 55px;
+	
+    margin-left: 0px;
+    right: 279px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+nav a{
+	text-decoration: none;
+	color: black;
+}
+
+nav li{
+	list-style: none;
+	padding: 10px;
+	font-weight: 800;
+	
+	left:15px;
+}
+
+nav li:hover{
+	background-color: #D6EAF8;	
+}
+
+*/
+
