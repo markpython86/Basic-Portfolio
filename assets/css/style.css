@@ -130,38 +130,25 @@ h6 {
 	margin-left: 280px;
 }
 
-#box1{
-	display: inline;
-	float: right;
-	height:75px;
-	width:150px;
-	height: 150px;
+.box{
+	margin: 3%;
+	display: inline-block;
+	/*float: right;*/
+	width:25%;
+	height: 230px;
 	background-color: #D6EAF8;	
-	position: relative;
+	/*position: relative;*/
 	
 }
 
-#box2{
-	float: right;
-	width:150px;
-	height:75px;
-	height: 150px;
-	background-color: #D6EAF8;
-	left:155px;
-	/*top: 0;*/
-	position: relative;
-	
+section{
+	/*position: relative;*/
+	margin-right: auto;
+	margin-left:auto;
+	/*margin-top: 100px;*/
+	/*top:83px;*/
 }
 
-#box3{
-	float: right;
-	height:75px;
-	position: relative;
-	width:150px;
-	height: 150px;
-	background-color: #D6EAF8;	
-	left:310px;	
-}
 
 
 /*------------------- responsive page*/
@@ -228,9 +215,11 @@ li {
 
 /*when hover on the menu items shaded in light blue */
 
-li:hover{
+li:hover:active{
 	background-color: #D6EAF8;
+
 }
+
 
 
 /*responsive page when screen is 760px*/
@@ -326,3 +315,7 @@ nav li:hover{
 
 */
 
+
+#writingBox{
+	height:80px;
+}
