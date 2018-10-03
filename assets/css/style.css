@@ -142,11 +142,18 @@ h6 {
 }
 
 section{
-	/*position: relative;*/
+
+	position: relative;
 	margin-right: auto;
 	margin-left:auto;
 	/*margin-top: 100px;*/
 	/*top:83px;*/
+
+	position: relative;
+	margin-right: auto;
+	margin-left:auto;
+	/*margin-top: 100px;*/
+	top:83px;
 }
 
 
