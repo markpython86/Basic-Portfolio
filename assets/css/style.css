@@ -3,13 +3,10 @@
 body {
 
     font-family: 'Trebuchet MS', 'Helvetica Neue', Helvetica, sans-serif;
-    /*color: black;*/
-    /*background-color: black;*/
     max-width: 960px;
     font-size: 18px;
     height: 2000px;
     text-align: center;
-     /*display: block; */
     margin-left: auto;
     margin-right: auto;
     background-image: url("../images/connectwork.png");
@@ -17,48 +14,28 @@ body {
 
 }
 
-.container {
-	position: relative;
-	top:100px;
-    color: black;
-    /*background-color: black;*/
-    max-width: 960px;
-    font-size: 18px;
-    text-align: left;
-     /*display: block; */
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-    /*margin-top: 15px;*/
-    padding: 20px 100px;
-    /*z-index: 7;*/
+/*nav bar style*/
 
+/*anchor tag viseted effect disabled*/
+a:visited {
+	color:#000;
+} 
 
-}
-
+/*nav tag */
 nav{
 	margin-right: auto;
 	margin-left:auto;
-	/*position: fixed;*/
-	z-index: 10;
-	/*padding-right: 150px;
-	padding-left:150px;*/
-	/*left:12px;*/
-	/*margin-left: auto;
-    margin-right: auto;
-  *//*left: 0;*/
     max-width: 960px;
 	width: 70%;
 	height:55px;
-
-	background-color: white;
 	clear: both;
+	background-color: white;
+	z-index: 10;
 }
 
-
+/*name box*/
 .name{
 	margin-top: 15px;
-	/*margin-left: 18.4%;*/
 	float: left;
 	width: 200px;
 	height: 60px;
@@ -68,6 +45,8 @@ nav{
 	color: white;
 	font-size: 1em;
 }
+
+
 .none:hover{
 	background-color: transparent;
 
@@ -76,24 +55,33 @@ nav{
 header{
 	position: fixed;
 	z-index: 2;
-	
-	/*left:12px;*/
-	/*margin-left: auto;
-    margin-right: auto;
-  */left: 0;
-  /*max-width: 960px;*/
+ 	left: 0;
 	width: 100%;
 	height:75px;
-
 	background-color: white;
 	clear: both;
 }
 
-img{
-	float:left;
-	
-	margin-right:30px;
+
+
+
+
+/*Index & contact & portfolio content container and header section ***maybe change container to mainContent****/
+
+.container {
+	position: relative;
+	top:100px;
+    color: black;
+    max-width: 960px;
+    font-size: 18px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 20px 100px;
 }
+
+/*main content heading /start/-- About me & contact and portfolio */
 
 .heading{
 	margin-bottom: 0; 
@@ -105,30 +93,17 @@ hr{
 	margin:20px auto;
 }
 
-footer{
-	border-top: 3px solid #43DDE5;
+/*main content heading /ends/-- About me & contact and portfolio */
 
-	position: fixed;
-	z-index: 10;
-	/*left:12px;*/
-	/*margin-left: auto;
-    margin-right: auto;*/
-    left:0;
- 	bottom:0;
-  /*max-width: 960px;*/
-	width: 100%;
-	height:75px;
-
-	background-color: white;
-	clear: both;
-	text-align: left;
-
+/*about me page picture - floating left with spacing between image and text*/
+#profilePic{
+	float:left;
+	margin-right:30px;
 }
 
-h6 {
 
-	margin-left: 280px;
-}
+
+/*columns and sections -- portfolio page */
 
 .box{
 	margin: 3%;
@@ -153,21 +128,14 @@ section{
 	margin-right: auto;
 	margin-left:auto;
 	/*margin-top: 100px;*/
-	top:83px;
+	/*top:83px;*/
 }
 
 
+/*------------------------------- responsive menu styling*/
 
-/*------------------- responsive page*/
 
-
-/*nav {
-
-	float: right;
-	padding: 20px;	
-	
-}*/
-/*hiddin icon styling*/
+/*hidden icon styling*/
 #menu-icon {
 
 	display: hidden;
@@ -181,8 +149,6 @@ section{
 
 /*hidden icon for responsive page*/
 a:hover#menu-icon {
-
-	/*background-color: #444;*/
 	border-radius: 4px 4px 0 0;
 	width: 40px;
 	height:40px;
@@ -195,17 +161,12 @@ ul {
 	float:right;
 	display: flex;
 	flex-direction: row;
-	
 	line-height: 55px;
-	
     margin-left: 0px;
-  /*  right: 279px;*/
     padding-left: 0px;
     margin-bottom: 0px;
     margin-top: 0px;
-
 	list-style: none;
-
 }
 
 
@@ -222,7 +183,7 @@ li {
 
 /*when hover on the menu items shaded in light blue */
 
-li:hover:active{
+li:hover{
 	background-color: #D6EAF8;
 
 }
@@ -287,42 +248,38 @@ li:hover:active{
 
 /*responsive menu end code*/
 
-/*nav ul {
-	position: relative;
-	float:right;
-	
-	display: flex;
-	flex-direction: row;
-	text-align: center;
-	line-height: 55px;
-	
-    margin-left: 0px;
-    right: 279px;
-    padding-left: 0px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-
-}
-nav a{
-	text-decoration: none;
-	color: black;
-}
-
-nav li{
-	list-style: none;
-	padding: 10px;
-	font-weight: 800;
-	
-	left:15px;
-}
-
-nav li:hover{
-	background-color: #D6EAF8;	
-}
-
-*/
 
 
 #writingBox{
 	height:80px;
 }
+
+
+
+/*footer sectio style*/
+
+footer{
+	border-top: 3px solid #43DDE5;
+	position: fixed;
+	z-index: 10;
+	/*left:12px;*/
+	/*margin-left: auto;
+    margin-right: auto;*/
+    left:0;
+ 	bottom:0;
+  /*max-width: 960px;*/
+	width: 100%;
+	height:75px;
+
+	background-color: white;
+	clear: both;
+	text-align: left;
+
+}
+
+h6 {
+
+	margin-left: 280px;
+}
+
+/*-------------------------------*/
