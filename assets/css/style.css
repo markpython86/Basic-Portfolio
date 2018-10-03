@@ -105,14 +105,30 @@ hr{
 
 /*columns and sections -- portfolio page */
 
+
+.column{
+	float: left;
+	margin: 3%;
+    width: 25%;
+    width:25%;
+	height: 230px;
+	background-color: #D6EAF8;	
+}
+
+.row:after{
+	content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*
 .box{
 	margin: 3%;
 	display: inline-block;
-	/*float: right;*/
 	width:25%;
 	height: 230px;
 	background-color: #D6EAF8;	
-	/*position: relative;*/
 	
 }
 
@@ -121,15 +137,12 @@ section{
 	position: relative;
 	margin-right: auto;
 	margin-left:auto;
-	/*margin-top: 100px;*/
-	/*top:83px;*/
-
 	position: relative;
 	margin-right: auto;
 	margin-left:auto;
-	/*margin-top: 100px;*/
-	/*top:83px;*/
 }
+
+*/
 
 
 /*------------------------------- responsive menu styling*/
