@@ -2,22 +2,23 @@
 
 body {
 
-    font-family: 'Trebuchet MS', 'Helvetica Neue', Helvetica, sans-serif;
-    max-width: 960px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    /*max-width: 960px;*/
     font-size: 18px;
-    height: 2000px;
+    /*height: 1000px;*/
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     background-image: url("../images/connectwork.png");
     margin-top: 0 ;
+    position: relative;
+    margin-bottom: 0;
 
 }
-/*, li.portfolio, li.contact*/
+/*header menu background color when active*/
 
 li.about, li.portfolio, li.contact{
-	/*font-size: 13px;*/
-	background: #D6EAF8;
+	background-color: rgba(74, 170, 165, 0.5);
 }
 
 /*nav bar style*/
@@ -40,16 +41,21 @@ nav{
 }
 
 /*name box*/
+h1.name{
+	font-size: 20px;
+	padding: 19px 0;
+
+
+}
 .name{
+
 	margin-top: 15px;
 	float: left;
 	width: 200px;
-	height: 60px;
-	display: block;
-	line-height: 60px;
-	background-color: #43DDE5;
+	height: 22px;
+	/*display: block;*/
+	background-color: #4aaaa5;
 	color: white;
-	font-size: 1em;
 }
 
 
@@ -57,8 +63,11 @@ nav{
 	background-color: transparent;
 
 }
-
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
 header{
+	
 	position: fixed;
 	z-index: 2;
  	left: 0;
@@ -91,12 +100,15 @@ header{
 
 .heading{
 	margin-bottom: 0; 
-	color: #43DDE5;
+	color: #4aaaa5;
 
 }
 
 hr{
 	margin:20px auto;
+	/*background-color: grey;*/
+	border-top: 2px solid lightgrey;
+
 }
 
 /*main content heading /ends/-- About me & contact and portfolio */
@@ -111,13 +123,33 @@ hr{
 
 /*columns and sections -- portfolio page */
 
+@keyframes zoomIn {
+        0% {
+            transform: scale(1.0);
+            -webkit-transform: scale(1.0);
+        }
+        100% {
+            transform: scale(2.0);
+            -webkit-transform: scale(2.0);
+        }
+    }
+
 
 .column{
 	float: left;
 	margin: 4%;
     width: 192px;
 	height: 230px;
-	background-color: #D6EAF8;	
+	background-color: #4aaaa5;	
+
+}
+
+.boxName:hover{
+	overflow: hidden;
+	animation: zoomIn 5s ease-in-out alternate;
+    -webkit-animation: zoomIn 5s ease-in-out alternate;
+    z-index: -1 !important;
+
 }
 
 .row:after{
@@ -126,6 +158,14 @@ hr{
     clear: both;
 }
 
+.boxName{
+	position: relative;
+	width: 100%;
+	height:50px;
+	top:150px;
+	background-color: black;
+
+}
 
 /*------------------------------- responsive menu styling*/
 
@@ -171,8 +211,10 @@ li {
 
 	display: inline-block;
 	float: right;
-	padding: 10px;
-	font-weight: 800;
+	padding: 10px ;
+	/*font-weight: 800;*/
+	font-size: 13px;
+	color: #777777
 
 
 }
@@ -180,7 +222,7 @@ li {
 /*when hover on the menu items shaded in light blue */
 
 li:hover{
-	background-color: #D6EAF8;
+	background-color: #4aaaa5;
 
 }
 
@@ -242,6 +284,10 @@ li:hover{
 }
 
 /*responsive menu end code*/
+form{
+	color: #777777;
+	padding: 13px 0;
+}
 
 
 
@@ -249,26 +295,36 @@ li:hover{
 	height:80px;
 }
 
+input#submit{
+	background-color: #4aaaa5;
+	color: white;
+	padding: 7px 17px;
+	border:0px;
+}
 
 
 /*footer sectio style*/
 
 footer{
-	position: fixed;
+	position: absolute;
     left:0;
  	bottom:0;
 	width: 100%;
 	height:75px;
-	text-align: left;
-	background-color: white;
-	border-top: 3px solid #43DDE5;
+	text-align: center;
+	color: white;
+	background-color: #666666;
+	border-top: 3px solid #4aaaa5;
 	z-index: 10;
 
 }
 
-h6 {
-
-	margin-left: 280px;
+.sticky{
+	position: absolute;
+	bottom: 0;
 }
 
+.copy{
+
+}
 /*-------------------------------*/
