@@ -30,6 +30,11 @@ html, body{
 	background-image: url("../images/connectwork.png");
 }
 
+a{
+	text-decoration: none;
+	color: #000;
+}
+
 
 .header{
 	
@@ -308,6 +313,7 @@ form{
 
 #message{
 	height:80px;
+	vertical-align: top;
 }
 
 /*form elements with 100% width*/
