@@ -28,16 +28,17 @@ html, body{
 	text-align: center;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	background-image: url("../images/connectwork.png");
+
 }
 
-a{
+ul a{
 	text-decoration: none;
 	color: #000;
 }
 
 
 .header{
-	
+
 	position: fixed;
 	top: 0;
  	left: 0;
@@ -56,10 +57,10 @@ nav{
 	margin:0 auto;
 }
 
-*anchor tag viseted effect disabled*/
+/*anchor tag viseted effect disabled*/
 a:visited {
 	color:#000;
-} 
+}
 
 
 p.about{
@@ -81,7 +82,7 @@ h1.name{
 	width: 200px;
 	height: 22px;
 	/*display: block;*/
-	background-color: #4aaaa5;
+	background-color: black;
 	color: white;
 }
 
@@ -93,7 +94,7 @@ h1.name{
 /*Index & contact & portfolio content container and header section ***maybe change container to mainContent****/
 
 .container{
-	background-color: white;
+	background-color: black;
 	width: 960px;
 	margin:0 auto;
 	text-align: left
@@ -110,8 +111,8 @@ h1.name{
 /*main content heading /start/-- About me & contact and portfolio */
 
 .heading{
-	margin-bottom: 0; 
-	color: #4aaaa5;
+	margin-bottom: 0;
+	color: black;
 
 }
 
@@ -138,8 +139,8 @@ hr{
 
 /*hidden icon styling*/
 #menu-icon {
-	/*float: right;*/
-	display: hidden;
+	float: right;
+	visibility:hidden;
 	top:20px;
 	width: 40px;
 	height: 40px;
@@ -201,7 +202,7 @@ li:hover{
 @media only screen and (max-width : 762px) {
 	.name{
 		margin-top: 15px;
-	}	
+	}
 
 
 
@@ -213,11 +214,11 @@ li:hover{
 
 	#menu-icon {
 		float: right;
-		display:inline-block;
+		display:flex;
 		margin-top: 22px;
 	}
 
-	nav ul, nav:active ul { 
+	nav ul, nav:active ul {
 
 		display: none;
 		position: absolute;
@@ -231,7 +232,7 @@ li:hover{
 
 	}
 
-	nav li {
+	nav li a{
 
 		text-align: center;
 		width: 100%;
@@ -240,7 +241,7 @@ li:hover{
 
 	}
 
-	nav:hover ul {
+	nav:hover ul a{
 
 		display: block;
 
@@ -354,4 +355,3 @@ div#footer{
 .copy{
 	margin-top: 51px;
 }
-
